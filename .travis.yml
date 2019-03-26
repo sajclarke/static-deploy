@@ -9,9 +9,6 @@ script:
   - mkdir -p build/css
   - cp index.html build/
   - ls build
-  - yarn run sass
-  - yarn run css-preprocess
-  - ls build
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
