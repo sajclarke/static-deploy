@@ -135,7 +135,7 @@ gulp.task("serve", ["imagemin", "clean-css"], function() {
 // default gulp task
 gulp.task(
   "default",
-  ["imagemin", "clean-css", "clean-html", "clean-js", "renameSources"],
+  ["imagemin", "clean-css", "clean-html", "renameSources"],
   function() {
     // gulp.start("renameSources");
   }
@@ -146,7 +146,7 @@ gulp.task("dist", function(callback) {
     // "imagemin",
     "clean-css",
     "clean-html",
-    "clean-js",
+
     "renameSources",
     callback
   );
